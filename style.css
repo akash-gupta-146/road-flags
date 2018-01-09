@@ -1,0 +1,515 @@
+@keyframes bounceInUp {
+    from, 60%, 75%, 90%, to {
+      animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+  
+    from {
+      opacity: 0;
+      transform: translate3d(0, 3000px, 0);
+    }
+  
+    60% {
+      opacity: 1;
+      transform: translate3d(0, -20px, 0);
+    }
+  
+    75% {
+      transform: translate3d(0, 10px, 0);
+    }
+  
+    90% {
+      transform: translate3d(0, -5px, 0);
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .bounceInUp {
+    animation-name: bounceInUp;
+  }
+  @keyframes jackInTheBox {
+    from {
+      opacity: 0;
+      transform: scale(0.1) rotate(30deg);
+      transform-origin: center bottom;
+    }
+  
+    50% {
+      transform: rotate(-10deg);
+    }
+  
+    70% {
+      transform: rotate(3deg);
+    }
+  
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .jackInTheBox {
+    animation-name: jackInTheBox;
+  }
+  
+  .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  @keyframes flash {
+    20%, 60%, to {
+      opacity: 1;
+    }
+  
+    from,40% {
+      opacity: 0;
+    }
+  }
+  
+  .flash {
+    animation-name: flash;
+  }
+
+  @keyframes bounceInLeft {
+    from, 60%, 75%, 90%, to {
+      animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+  
+    0% {
+      opacity: 0;
+      transform: translate3d(-3000px, 0, 0);
+    }
+  
+    60% {
+      opacity: 1;
+      transform: translate3d(25px, 0, 0);
+    }
+  
+    75% {
+      transform: translate3d(-10px, 0, 0);
+    }
+  
+    90% {
+      transform: translate3d(5px, 0, 0);
+    }
+  
+    to {
+      transform: none;
+    }
+  }
+  
+  .bounceInLeft {
+    animation-name: bounceInLeft;
+  }
+
+  .delay-aniamtion-1s{
+      animation-delay: 1s;
+  }
+  .delay-aniamtion-2s{
+    animation-delay: 1.5s !important;
+}
+@keyframes zoomIn {
+    from {
+      opacity: 0;
+      transform: scale3d(.3, .3, .3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  .zoomIn {
+    animation-name: zoomIn;
+  }
+
+  @keyframes slideInLeft {
+  from {
+    transform: translate3d(-100%, 0, 0);
+    visibility: hidden;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInLeft {
+  animation-name: slideInLeft;
+}
+
+@keyframes slideInUp {
+    from {
+      transform: translate3d(0, 100%, 0);
+      visibility: visible;
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .slideInUp {
+    animation-name: slideInUp;
+  }
+
+div[path]{
+    width:100%;
+    background:lightgray;
+    height: 750px;
+}
+div[main]{
+    position: absolute;
+    /* width: min-content; */
+    right: 200px;
+    top: 38px;
+}
+div[description]{
+    /* position: absolute;
+    left: 0;
+    left: -150px;
+    top: 280px; */
+}
+div[graphText]{
+    /* transform: translate(-55px,30px); */
+    color: #2b2f38;
+    /* text-align: center; */
+    font-size: 50px;
+    color: #005b7e;
+    position: absolute;
+    top: 250px;
+    left: -500px;
+}
+div[graphText] span{
+    font-size: 25px;
+}
+/* img[graph]{
+    position: absolute;
+    transform: translate(0px);
+    width: 200px;
+} */
+/* img[increasing]{
+    position: absolute;
+    left: 10px;
+    top: 27px;
+} */
+/* img[manager]{
+    position: absolute;
+    width: 100px;
+    left: -81px;
+} */
+img[university]{
+    width: 150px;
+    position: absolute;
+    left: 134px;
+    z-index: 1;
+}
+img[road]{
+    width: 773px;
+    position: relative;
+    /* bottom: -50px; */
+    top: 70px;
+}
+div[flag1]{
+    position: absolute;
+    left: -120px;
+    top: 630px;
+    /* bottom: 0; */
+    transform: translate(90px,-160px);
+}
+.sem{
+    position: absolute;
+    left: 8px;
+    top: 6px;
+    color: #a4409e;
+    width: 145px;
+    height: 21px;
+    text-align: center;
+    padding-top: 5px;
+    transition:0.2s;
+    cursor: pointer;
+}
+.sem:hover{
+    z-index:10;
+    background:#a4409e !important;
+    color:white !important;
+}
+img[flag1]{
+    transform: rotatey(180deg);
+    width: 170px;
+    z-index:8;
+}
+div[flag1Text]{
+    position: absolute;
+    top: 40px;
+    text-align: right;
+    right: 25px;
+    color: #293153;
+    font-size: small;
+}
+
+div[flag2]{
+    position: absolute;
+    top: 530px;
+    left: 500px;
+}
+img[flag2]{
+    /* transform: rotatey(180deg); */
+    width: 170px;
+    z-index:8;
+    transform: rotatey(180deg);
+}
+div[flag2] span{
+    position: absolute;
+    top: 6px;
+    width: 145px;
+    height: 20px;
+    text-align: center;
+    left: 18px;
+    padding-top: 6px;
+    cursor: pointer;
+    transition:0.2s;
+    color:white;
+}
+div[flag2] span:hover{
+    background:#e53982;
+    color:white;
+}
+div[flag2Text]{
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    color: lightgray;
+    font-size: small;
+}
+
+div[flag3]{
+    position: absolute;
+    top: 425px;
+    left: 183px;
+}
+img[flag3]{
+    width: 170px;
+}
+div[flag3] span{
+    position: absolute;
+    top: 7px;
+    width: 145px;
+    height: 21px;
+    text-align: center;
+    left: 7px;
+    padding-top: 6px;
+    cursor: pointer;
+    color: #293153;
+    transition:0.2s;
+}
+div[flag3] span:hover{
+    background:#9bcd50;
+    color:white
+}
+div[flag3Text]{
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    color: black;
+    font-size: small;
+}
+
+div[flag4]{
+    position: absolute;
+    top: 289px;
+    left: 719px;
+}
+img[flag4]{
+    width: 170px;
+    transform: rotatey(180deg);
+}
+div[flag4] span{
+    position: absolute;
+    top: 5px;
+    width: 145px;
+    height: 21px;
+    text-align: center;
+    left: 19px;
+    padding-top: 6px;
+    cursor: pointer;
+    color: #0195d4;
+    transition: 0.2s;
+}
+div[flag4] span:hover{
+    background:#0195d4;
+    color:white
+}
+div[flag4Text]{
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    color: black;
+    font-size: small;
+}
+
+div[flag5]{
+    position: absolute;
+    top: 307px;
+    left: 363px;
+}
+img[flag5]{
+    width: 170px;
+}
+div[flag5] span{
+    position: absolute;
+    top: 6px;
+    width: 145px;
+    height: 21px;
+    text-align: center;
+    left: 7px;
+    padding-top: 6px;
+    cursor: pointer;
+    color: #293153;
+    transition: 0.2s;
+}
+div[flag5] span:hover{
+    background:#f7cd36;
+    color:white
+}
+div[flag5Text]{
+    position: absolute;
+    top: 40px;
+    right: 25px;
+    color: #293153;
+    font-size: small;
+    text-align: right;
+}
+
+div[flag6]{
+    position: absolute;
+    top: 166px;
+    left: 635px;
+}
+img[flag6]{
+    width: 170px;
+    transform:rotatey(180deg);
+}
+div[flag6] span{
+    position: absolute;
+    top: 6px;
+    width: 145px;
+    height: 21px;
+    text-align: center;
+    left: 18px;
+    padding-top: 6px;
+    cursor: pointer;
+    color: #293153;
+    transition: 0.2s;
+}
+div[flag6] span:hover{
+    background:#ae3dea;
+    color:white
+}
+div[flag6Text]{
+    position: absolute;
+    top: 40px;
+    left: 25px;
+    color: #293153;
+    font-size: small;
+}
+
+div[flag7]{
+    position: absolute;
+    top: 107px;
+    left: 460px;
+}
+img[flag7]{
+    width: 170px;
+    transform:rotatey(180deg);
+}
+div[flag7] span{
+    position: absolute;
+    top: 6px;
+    width: 145px;
+    height: 21px;
+    text-align: center;
+    left: 18px;
+    padding-top: 6px;
+    cursor: pointer;
+    color: #293153;
+    transition: 0.2s;
+}
+div[flag7] span:hover{
+    background:#17ccbb; 
+    color:white
+}
+div[flag7Text]{
+    position: absolute;
+    top: 40px;
+    left: 25px;
+    color: #293153;
+    font-size: small;
+}
+
+div[flag8]{
+    position: absolute;
+    top: 79px;
+    left: -52px;
+}
+img[flag8]{
+    width: 170px;
+    transform:rotatey(180deg);
+}
+div[flag8] span{
+    position: absolute;
+    top: 6px;
+    width: 145px;
+    height: 21px;
+    text-align: center;
+    left: 7px;
+    padding-top: 6px;
+    cursor: pointer;
+    color: #293153;
+    transition: 0.2s;
+}
+div[flag8] span:hover{
+    background:#ff6c02; 
+    color:white
+}
+div[flag8Text]{
+    position: absolute;
+    top: 40px;
+    right:24px;
+    color: #293153;
+    font-size: small;
+}
+
+div[flag9]{
+    position: absolute;
+    top: 24px;
+    left: 330px;
+}
+img[flag9]{
+    width: 170px;
+}
+div[flag9] span{
+    position: absolute;
+    top: 6px;
+    width: 145px;
+    height: 21px;
+    text-align: center;
+    left: 19px;
+    padding-top: 6px;
+    cursor: pointer;
+    color: #293153;
+    transition: 0.2s;
+}
+div[flag9] span:hover{
+    background:#ff0048;
+    color:white
+}
+div[flag9Text]{
+    position: absolute;
+    top: 40px;
+    right:24px;
+    color: #293153;
+    font-size: small;
+}
